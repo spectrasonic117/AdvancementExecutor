@@ -1,0 +1,10 @@
+com/spectrasonic/AdvancementExecutor/managers/ConfigManager.class
+com/spectrasonic/AdvancementExecutor/managers/CommandManager.class
+com/spectrasonic/Utils/ItemBuilder.class
+com/spectrasonic/AdvancementExecutor/advancements/AdvancementActionRegistry.class
+com/spectrasonic/AdvancementExecutor/listeners/AdvancementListener.class
+com/spectrasonic/AdvancementExecutor/Main.class
+com/spectrasonic/AdvancementExecutor/managers/EventManager.class
+com/spectrasonic/Utils/SoundUtils.class
+com/spectrasonic/Utils/MessageUtils.class
+com/spectrasonic/Utils/CommandUtils.class
