@@ -21,7 +21,7 @@ public class AdvancementActionRegistry {
     private static final Map<String, Consumer<Player>> advancementActions = new HashMap<>();
 
     static {
-        // Advancement key: namespace:path (e.g., minecraft:story/mine_stone)
+        // ---- Nivel Facil ----
         register("minecraft:story/mine_stone",
                 player -> {
                     player.getInventory().addItem(new ItemStack(Material.STONE, 1));
@@ -38,18 +38,7 @@ public class AdvancementActionRegistry {
                     player.getInventory().addItem(new ItemStack(Material.IRON_INGOT, 3));
                     MessageUtils.sendMessage(player, "<green>Has recibido 3 IRON_INGOT</green>");
                 });
-        register("minecraft:story/obtain_armor",
-                player -> {
-                    player.getInventory().addItem(new ItemStack(Material.IRON_CHESTPLATE, 1));
-                    MessageUtils.sendMessage(player,
-                            "<green>Has recibido 1 IRON_CHESTPLATE</green>");
-                });
-        register("minecraft:story/lava_bucket",
-                player -> {
-                    player.getInventory().addItem(new ItemStack(Material.LAVA_BUCKET, 1));
-                    MessageUtils.sendMessage(player,
-                            "<green>Has recibido 1 LAVA_BUCKET</green>");
-                });
+
     }
 
     public static void register(String advancementKey, Consumer<Player> action) {

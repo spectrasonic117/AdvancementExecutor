@@ -47,6 +47,7 @@
               <shadedPattern>spectrasonic.locales</shadedPattern>
             </relocation>
           </relocations>
+          <shadedArtifactAttached>true</shadedArtifactAttached>
         </configuration>
       </plugin>
       <plugin>

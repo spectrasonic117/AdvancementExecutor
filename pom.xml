@@ -108,6 +108,7 @@
                             <shadedPattern>spectrasonic.locales</shadedPattern>
                         </relocation>
                     </relocations>
+                    <shadedArtifactAttached>true</shadedArtifactAttached>
                 </configuration>
                 <executions>
                     <execution>
