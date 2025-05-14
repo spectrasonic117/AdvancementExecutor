@@ -1,14 +1,17 @@
 package com.spectrasonic.AdvancementExecutor.listeners;
 
-import com.spectrasonic.AdvancementExecutor.advancements.AdvancementActionRegistry;
-import com.spectrasonic.Utils.MessageUtils;
+import com.spectrasonic.AdvancementExecutor.advancements.Facil_AdvancementActionRegistry;
+import com.spectrasonic.AdvancementExecutor.advancements.Medio_AdvancementActionRegistry;
+import com.spectrasonic.AdvancementExecutor.advancements.Intermedio_AdvancementActionRegistry;
+import com.spectrasonic.AdvancementExecutor.advancements.Dificil_AdvancementActionRegistry;
+import com.spectrasonic.AdvancementExecutor.advancements.MuyDificil_AdvancementActionRegistry;
 import org.bukkit.advancement.Advancement;
-import org.bukkit.advancement.AdvancementProgress;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerAdvancementDoneEvent;
 
+import java.util.function.Consumer;
 import java.util.Optional;
 
 /**
@@ -17,19 +20,20 @@ import java.util.Optional;
 public class AdvancementListener implements Listener {
 
     @EventHandler
-    public void onPlayerAdvancementDone(PlayerAdvancementDoneEvent event) {
+    public void onPlayerAdvancement(PlayerAdvancementDoneEvent event) {
         Player player = event.getPlayer();
         Advancement advancement = event.getAdvancement();
         String key = advancement.getKey().toString();
 
-        Optional<java.util.function.Consumer<Player>> actionOpt = AdvancementActionRegistry.getAction(key);
-        if (actionOpt.isPresent()) {
-            // Replace %player% placeholder with actual player name in command
-            java.util.function.Consumer<Player> action = p -> actionOpt.get().accept(p);
-            action.accept(player);
+        // Check each registry for the advancement
+        checkAndExecuteAction(Facil_AdvancementActionRegistry.getAction(key), player);
+        checkAndExecuteAction(Medio_AdvancementActionRegistry.getAction(key), player);
+        checkAndExecuteAction(Intermedio_AdvancementActionRegistry.getAction(key), player);
+        checkAndExecuteAction(Dificil_AdvancementActionRegistry.getAction(key), player);
+        checkAndExecuteAction(MuyDificil_AdvancementActionRegistry.getAction(key), player);
+    }
 
-            MessageUtils.sendMessage(player,
-                    "<green>¡Has completado el logro!</green> <yellow>" + advancement.getKey().getKey() + "</yellow>");
-        }
+    private void checkAndExecuteAction(Optional<Consumer<Player>> action, Player player) {
+        action.ifPresent(consumer -> consumer.accept(player));
     }
 }

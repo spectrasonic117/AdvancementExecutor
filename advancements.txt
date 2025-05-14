@@ -1,5 +1,8 @@
 --- Facil ---
 
+story/mine_stone
+story/upgrade_tools
+story/smelt_iron
 husbandry/plant_seed
 husbandry/fishy_business
 husbandry/tactical_fishing
