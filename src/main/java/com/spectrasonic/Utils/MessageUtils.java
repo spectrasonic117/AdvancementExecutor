@@ -15,6 +15,7 @@ public final class MessageUtils {
     private static final JavaPlugin plugin = JavaPlugin.getProvidingPlugin(MessageUtils.class);
     public static final String DIVIDER = "<gray>----------------------------------------</gray>";
     public static final String PREFIX = "<gray>[<gold>"+ plugin.getPluginMeta().getName()+"</gold>]</gray> <gold>»</gold> ";
+    public static final String MESSAGEPREFIX = "<dark_gray>[<aqua>Speedrun</aqua>]</dark_gray> <green>❯</green> ";
 
     private static final MiniMessage miniMessage = MiniMessage.miniMessage();
 
@@ -23,15 +24,15 @@ public final class MessageUtils {
     }
 
     public static void sendMessage(CommandSender sender, String message) {
-        sender.sendMessage(miniMessage.deserialize(PREFIX + message));
+        sender.sendMessage(miniMessage.deserialize(MESSAGEPREFIX + message));
     }
 
     public static void sendConsoleMessage(String message) {
-        Bukkit.getConsoleSender().sendMessage(miniMessage.deserialize(PREFIX + message));
+        Bukkit.getConsoleSender().sendMessage(miniMessage.deserialize(MESSAGEPREFIX + message));
     }
 
     public static void sendPermissionMessage(CommandSender sender) {
-        sender.sendMessage(miniMessage.deserialize(PREFIX + "<red>You do not have permission to use this command!</red>"));
+        sender.sendMessage(miniMessage.deserialize(MESSAGEPREFIX + "<red>You do not have permission to use this command!</red>"));
     }
 
     public static void sendStartupMessage(JavaPlugin plugin) {

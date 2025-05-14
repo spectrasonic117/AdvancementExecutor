@@ -44,20 +44,18 @@ public class Dificil_AdvancementActionRegistry {
         // Nether advancements
         register("minecraft:nether/all_potions",
                 player -> handleAdvancement(player, "minecraft:nether/all_potions"));
-        register("minecraft:nether/all_effects",
-                player -> handleAdvancement(player, "minecraft:nether/all_effects"));
-        register("minecraft:nether/create_full_beacon",
-                player -> handleAdvancement(player, "minecraft:nether/create_full_beacon"));
-        register("minecraft:nether/uneasy_alliance",
-                player -> handleAdvancement(player, "minecraft:nether/uneasy_alliance"));
+        register("minecraft:nether/ride_strider_in_overworld_lava",
+                player -> handleAdvancement(player, "minecraft:nether/ride_strider_in_overworld_lava"));
+        register("minecraft:adventure/use_lodestone",
+                player -> handleAdvancement(player, "minecraft:adventure/use_lodestone"));
+        register("minecraft:nether/obtain_ancient_debris",
+                player -> handleAdvancement(player, "nether/obtain_ancient_debris"));
         
         // End advancements
         register("minecraft:end/respawn_dragon",
                 player -> handleAdvancement(player, "minecraft:end/respawn_dragon"));
-        register("minecraft:end/dragon_breath",
-                player -> handleAdvancement(player, "minecraft:end/dragon_breath"));
-        register("minecraft:end/levitate",
-                player -> handleAdvancement(player, "minecraft:end/levitate"));
+        register("minecraft:end/find_end_city",
+                player -> handleAdvancement(player, "minecraft:end/find_end_city"));
     }
 
     private static void handleAdvancement(Player player, String advancementKey) {
@@ -80,18 +78,18 @@ public class Dificil_AdvancementActionRegistry {
         }
         
         // Send the standard message for completing this advancement
-        MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
+        // MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
         
         // Check if all advancements are completed
         if (playerAdvs.size() >= TOTAL_ADVANCEMENTS) {
             completedPlayers.add(playerId);
             // Notify the player they completed the category
-            MessageUtils.sendMessage(player, "<green>¡Felicidades! Has completado todos los logros de la categoría Difícil</green>");
+            MessageUtils.sendMessage(player, "<green>¡Felicidades! Has completado todos los logros de la categoría <red><b>Difícil</b></red></green>");
             // Execute console command
             CommandUtils.ConsoleCommand("say " + player.getName() + " ha completado la categoría Difícil");
         } else {
             // Show progress
-            MessageUtils.sendMessage(player, "<yellow>Progreso: " + playerAdvs.size() + "/" + TOTAL_ADVANCEMENTS + " logros completados</yellow>");
+            MessageUtils.sendMessage(player, "<yellow>Progreso <red><b>Difícil</b></red>: " + playerAdvs.size() + "/" + TOTAL_ADVANCEMENTS + " logros completados</yellow>");
         }
     }
 
@@ -101,5 +99,10 @@ public class Dificil_AdvancementActionRegistry {
 
     public static Optional<Consumer<Player>> getAction(String advancementKey) {
         return Optional.ofNullable(advancementActions.get(advancementKey));
+    }
+
+    public static void resetPlayerAdvancements(UUID playerId) {
+        playerAdvancements.remove(playerId);
+        completedPlayers.remove(playerId);
     }
 }

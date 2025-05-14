@@ -112,18 +112,18 @@ public class Intermedio_AdvancementActionRegistry {
         }
         
         // Send the standard message for completing this advancement
-        MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
+        // MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
         
         // Check if all advancements are completed
         if (playerAdvs.size() >= TOTAL_ADVANCEMENTS) {
             completedPlayers.add(playerId);
             // Notify the player they completed the category
-            MessageUtils.sendMessage(player, "<green>¡Felicidades! Has completado todos los logros de la categoría Intermedio</green>");
+            MessageUtils.sendMessage(player, "<green>¡Felicidades! Has completado todos los logros de la categoría <#FC5F00><b>Intermedio</b></#FC5F00></green>");
             // Execute console command
             CommandUtils.ConsoleCommand("say " + player.getName() + " ha completado la categoría Intermedio");
         } else {
             // Show progress
-            MessageUtils.sendMessage(player, "<yellow>Progreso: " + playerAdvs.size() + "/" + TOTAL_ADVANCEMENTS + " logros completados</yellow>");
+            MessageUtils.sendMessage(player, "<yellow>Progreso <#FC5F00><b>Intermedio</b></#FC5F00>: " + playerAdvs.size() + "/" + TOTAL_ADVANCEMENTS + " logros completados</yellow>");
         }
     }
 
@@ -133,5 +133,10 @@ public class Intermedio_AdvancementActionRegistry {
 
     public static Optional<Consumer<Player>> getAction(String advancementKey) {
         return Optional.ofNullable(advancementActions.get(advancementKey));
+    }
+
+    public static void resetPlayerAdvancements(UUID playerId) {
+        playerAdvancements.remove(playerId);
+        completedPlayers.remove(playerId);
     }
 }

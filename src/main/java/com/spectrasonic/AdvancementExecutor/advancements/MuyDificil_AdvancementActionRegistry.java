@@ -84,18 +84,18 @@ public class MuyDificil_AdvancementActionRegistry {
         }
         
         // Send the standard message for completing this advancement
-        MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
+        // MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
         
         // Check if all advancements are completed
         if (playerAdvs.size() >= TOTAL_ADVANCEMENTS) {
             completedPlayers.add(playerId);
             // Notify the player they completed the category
-            MessageUtils.sendMessage(player, "<green>¡Felicidades! Has completado todos los logros de la categoría Muy Difícil</green>");
+            MessageUtils.sendMessage(player, "<green>¡Felicidades! Has completado todos los logros de la categoría <#FF00BE><b>Muy Difícil</b></#FF00BE></green>");
             // Execute console command
             CommandUtils.ConsoleCommand("say " + player.getName() + " ha completado la categoría Muy Difícil");
         } else {
             // Show progress
-            MessageUtils.sendMessage(player, "<yellow>Progreso: " + playerAdvs.size() + "/" + TOTAL_ADVANCEMENTS + " logros completados</yellow>");
+            MessageUtils.sendMessage(player, "<yellow>Progreso <#FF00BE><b>Muy Difícil</b></#FF00BE>: " + playerAdvs.size() + "/" + TOTAL_ADVANCEMENTS + " logros completados</yellow>");
         }
     }
 
@@ -105,5 +105,10 @@ public class MuyDificil_AdvancementActionRegistry {
 
     public static Optional<Consumer<Player>> getAction(String advancementKey) {
         return Optional.ofNullable(advancementActions.get(advancementKey));
+    }
+
+    public static void resetPlayerAdvancements(UUID playerId) {
+        playerAdvancements.remove(playerId);
+        completedPlayers.remove(playerId);
     }
 }
