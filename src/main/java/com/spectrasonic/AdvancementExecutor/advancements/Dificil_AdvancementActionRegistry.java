@@ -46,8 +46,8 @@ public class Dificil_AdvancementActionRegistry {
                 player -> handleAdvancement(player, "minecraft:nether/all_potions"));
         register("minecraft:nether/ride_strider_in_overworld_lava",
                 player -> handleAdvancement(player, "minecraft:nether/ride_strider_in_overworld_lava"));
-        register("minecraft:adventure/use_lodestone",
-                player -> handleAdvancement(player, "minecraft:adventure/use_lodestone"));
+        register("minecraft:nether/use_lodestone",
+                player -> handleAdvancement(player, "minecraft:nether/use_lodestone"));
         register("minecraft:nether/obtain_ancient_debris",
                 player -> handleAdvancement(player, "nether/obtain_ancient_debris"));
         

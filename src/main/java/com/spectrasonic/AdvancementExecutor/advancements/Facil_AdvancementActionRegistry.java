@@ -82,6 +82,8 @@ public class Facil_AdvancementActionRegistry {
         // Execute command for this advancement
         CommandUtils.ConsoleCommand("hexamissions mission facil facil-" + advancementName + " " + player.getName() + " force-success");
         
+        
+        
         // Check if all advancements are completed
         if (playerAdvs.size() >= TOTAL_ADVANCEMENTS) {
             completedPlayers.add(playerId);

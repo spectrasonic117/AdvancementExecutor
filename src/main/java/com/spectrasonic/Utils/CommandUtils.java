@@ -16,9 +16,9 @@ public class CommandUtils {
     }
 
     public static void ConsoleCommand(String command) {
-        if (plugin == null) {
-            throw new IllegalStateException("Plugin instance not set. Call setPlugin() first.");
-        }
+        // if (plugin == null) {
+        //     throw new IllegalStateException("Plugin instance not set. Call setPlugin() first.");
+        // }
         Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command);
 
         /*
@@ -28,9 +28,9 @@ public class CommandUtils {
     }
 
     public static void PlayerCommand(Player player, String command) {
-        if (player == null) {
-            throw new IllegalArgumentException("Player cannot be null.");
-        }
+        // if (player == null) {
+        //     throw new IllegalArgumentException("Player cannot be null.");
+        // }
         player.performCommand(command);
 
         /*
