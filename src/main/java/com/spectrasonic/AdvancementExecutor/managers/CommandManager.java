@@ -15,20 +15,10 @@ public class CommandManager {
     private PaperCommandManager commandManager;
 
     public void registerCommands() {
-        // Initialize ACF
         this.commandManager = new PaperCommandManager(plugin);
-        
-        // Enable Brigadier integration for better command support
-        commandManager.enableUnstableAPI("brigadier");
-        commandManager.enableUnstableAPI("help");
-        
-        // Register command completions
-        registerCompletions();
-        
-        // Register commands
+        registerCompletions();      
         commandManager.registerCommand(new AdvanvementExecutorCommand());
     }
-    
     private void registerCompletions() {
         commandManager.getCommandCompletions().registerCompletion("difficulty", c -> 
             java.util.Arrays.asList("facil", "medio", "intermedio", "dificil", "muydificil")

@@ -111,8 +111,10 @@ public class Intermedio_AdvancementActionRegistry {
             return;
         }
         
-        // Send the standard message for completing this advancement
-        // MessageUtils.sendMessage(player, "<green>Logro Completado</green>");
+        // Extract advancement name after last slash
+        String advancementName = advancementKey.substring(advancementKey.lastIndexOf('/') + 1);
+        // Execute command for this advancement
+        CommandUtils.ConsoleCommand("hexamissions mission intermiedio intermedio-" + advancementName + " " + player.getName() + " force-success");
         
         // Check if all advancements are completed
         if (playerAdvs.size() >= TOTAL_ADVANCEMENTS) {
@@ -138,5 +140,21 @@ public class Intermedio_AdvancementActionRegistry {
     public static void resetPlayerAdvancements(UUID playerId) {
         playerAdvancements.remove(playerId);
         completedPlayers.remove(playerId);
+    }
+
+    public static void addPoints(UUID playerId, int points) {
+        Set<String> playerAdvs = playerAdvancements.getOrDefault(playerId, new HashSet<>());
+        for (int i = 0; i < points; i++) {
+            playerAdvs.add("dummy_advancement_" + i); // Add dummy advancements to simulate points
+        }
+        playerAdvancements.put(playerId, playerAdvs);
+    }
+
+    public static void subtractPoints(UUID playerId, int points) {
+        Set<String> playerAdvs = playerAdvancements.getOrDefault(playerId, new HashSet<>());
+        for (int i = 0; i < points; i++) {
+            playerAdvs.remove("dummy_advancement_" + i); // Remove dummy advancements to simulate points
+        }
+        playerAdvancements.put(playerId, playerAdvs);
     }
 }

@@ -92,7 +92,7 @@ husbandry/feed_snifflet
 husbandry/allay_deliver_cake_to_note_block
 nether/all_potions
 nether/ride_strider_in_overworld_lava
-adventure/use_lodestone
+nether/use_lodestone
 nether/obtain_ancient_debris
 end/respawn_dragon
 end/find_end_city
