@@ -1,0 +1,101 @@
+title: <#FF00BE><b>Muy Dificil
+icon:
+    path: textures/item/end_crystal.png
+    size: 40
+categories:
+    "complete_catalogue":
+        title: <#FF00BE><b>Un gatálogo completo
+        description: <white>Domestica todas las especies de gato
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "whole_pack":
+        title: <#FF00BE><b>La manada completa
+        description: <white>Domestica todas las especies de lobo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "bred_all_animals":
+        title: <#FF00BE><b>De dos en dos
+        description: <white>Reproduce dos animales de cada especie
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "balanced_diet":
+        title: <#FF00BE><b>Dieta Balanceada
+        description: <white>Come todo lo comesible aunque no sea saludable
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "crafters_crafting_crafters":
+        title: <#FF00BE><b>Maquinas haciendo maquinas
+        description: <white>Mantente cerca deun fabricador cuando fabrique un fabricador
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "kill_all_mobs":
+        title: <#FF00BE><b>Sin Piedad
+        description: <white>Mata un mob por cada tipo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "totem_of_undying":
+        title: <#FF00BE><b>Post mórtem
+        description: <white>Usa un totem de inmortalidad
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "trim_with_all_exclusive_armor_patterns":
+        title: <#FF00BE><b>Forjando con estilo
+        description: <white>Aplica estas plantillas de herreria al menos una vez, agujas, hocico, costillas, guardian, silencio, vex, mareas, buscacaminos
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "play_jukebox_in_meadows":
+        title: <#FF00BE><b>El dulce cantar
+        description: <white>Haz que los prados recobren vida con el dulce sonar de un tocadiscos
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "overoverkill":
+        title: <#FF00BE><b>Golpe de gracia
+        description: <white>Inflinge 50 de daño de un solo golpe usando el mazo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "adventuring_time":
+        title: <#FF00BE><b>Hora de aventura
+        description: <white>Descubre todos los biomas
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "all_effects":
+        title: <#FF00BE><b>¿Como llegamos hasta aquí?
+        description: <white>Consigue todos los efectos posibles al mismo tiempo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "uneasy_alliance":
+        title: <#FF00BE><b>Falsa alianza
+        description: <white>Rescata un ghast del nether, llevalo a la superfici y acaba con él
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "netherite_armor":
+        title: <#FF00BE><b>Cubreme con Netherita
+        description: <white>Consigue el conjunto completo de armaduras de netherita
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "levitate":
+        title: <#FF00BE><b>Lindas vistas desde aqui
+        description: <white>Levita 50 bloques por ataque de shulkers
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "elytra":
+        title: <#FF00BE><b>Al infinito... ¡y más allá!
+        description: <white>Encuentra una elytra
+        background:
+            path: textures/gui/demo_background.png
+            size: 256

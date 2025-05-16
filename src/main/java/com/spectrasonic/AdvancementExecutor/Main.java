@@ -11,14 +11,14 @@ import org.bukkit.plugin.java.JavaPlugin;
 @Getter
 public final class Main extends JavaPlugin {
 
-    private static Main instance;
     private CommandManager commandManager;
     private EventManager eventManager;
     private ConfigManager configManager;
 
     @Override
     public void onEnable() {
-        instance = this;
+        saveDefaultConfig();
+        Main main = this;
         CommandUtils.setPlugin(this);
         this.configManager = new ConfigManager(this);
         this.commandManager = new CommandManager(this);
@@ -36,7 +36,4 @@ public final class Main extends JavaPlugin {
         MessageUtils.sendShutdownMessage(this);
     }
 
-    public static Main getInstance() {
-        return instance;
-    }
 }

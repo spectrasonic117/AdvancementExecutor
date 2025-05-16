@@ -1,5 +1,6 @@
 package com.spectrasonic.Utils;
 
+import lombok.Setter;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -9,11 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CommandUtils {
 
+    @Setter
     private static JavaPlugin plugin;
-
-    public static void setPlugin(JavaPlugin pluginInstance) {
-        plugin = pluginInstance;
-    }
 
     public static void ConsoleCommand(String command) {
         if (plugin == null) {

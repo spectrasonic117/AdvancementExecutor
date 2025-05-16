@@ -1,0 +1,149 @@
+title: <yellow><b>Medio
+icon:
+    path: textures/item/axolotl_bucket.png
+    size: 40
+categories:
+    "iron_tools":
+        title: <yellow><b>¿No es Hierroníco?
+        description: <white>Fabrica un pico de hierro
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "lava_bucket":
+        title: <yellow><b>¡La cosa está que arde!
+        description: <white>Llena una cubeta de lava
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "obtain_armor":
+        title: <yellow><b>A vestirse
+        description: <white>Protegete con una armadura completa de hierro
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "make_a_sign_glow":
+        title: <yellow><b>¡Brillante idea!
+        description: <white>Haz brillar el texto de un letrero
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "salvage_sherd":
+        title: <yellow><b>Respetando el pasado
+        description: <white>Cepilla un bloque sospechoso para obtener un fragmento de cerámica
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "wax_off":
+        title: <yellow><b>Quitar cera
+        description: <white>Quita la cera de un animal
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "avoid_vibration":
+        title: <yellow><b>Discreción 100
+        description: <white>Camina cerca de un sensor Sculk o de un warden sin ser detectado
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "trade":
+        title: <yellow><b>¡Que buen trato!
+        description: <white>Comercia con un aldeano
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "who_needs_rockets":
+        title: <yellow><b>¡Quien necesita cohetes!
+        description: <white>Usa una carga de viento para lanzarte 8 bloques arriba
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "brush_armadillo":
+        title: <yellow><b>Desarmadillo
+        description: <white>Consigue escamas de armadillo usando una brocha
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "walk_on_powder_snow_with_leather_boots":
+        title: <yellow><b>Ligero como conejo
+        description: <white>Camina sobre nieve de polvo con botas de cuero
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "minecraft_trials_edition":
+        title: <yellow><b>¡Comienza el juego!
+        description: <white>Entra en una cámara de Desafio
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "lighten_up":
+        title: <yellow><b>El resplandor
+        description: <white>Raspa una bombilla de cobre con un hacha para que brille mas
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "spyglass_at_parrot":
+        title: <yellow><b>¿Es un pajaro?
+        description: <white>Mira un loro a través de un catalejo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "under_lock_and_key":
+        title: <yellow><b>Bajo llave
+        description: <white>Abre un arcón con una llave de desafio
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "brew_potion":
+        title: <yellow><b>Destilería local
+        description: <white>Destila una poción
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "get_wither_skull":
+        title: <yellow><b>Por una cabeza
+        description: <white>Consigue el craneo de un esqueleto wither
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "distract_piglin":
+        title: <yellow><b>Mi precioso..
+        description: <white>Distrae un piglin con algo de oro
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "obtain_crying_obsidian":
+        title: <yellow><b>Quien está cortando cebollas
+        description: <white>Consigue obsidiana llorosa
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "charge_respawn_anchor":
+        title: <yellow><b>No "Siete" vidas exactamente
+        description: <white>Carga un nexo de aparición al maximo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "loot_bastion":
+        title: <yellow><b>Guerra de cerdos
+        description: <white>Saquea el cofre de una bastión
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "end":
+        title: <yellow><b>El End
+        description: <white>Entra al end
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "enter_end_gateway":
+        title: <yellow><b>Puerta Remota
+        description: <white>Escapa de la isla principal
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "dragon_breath":
+        title: <yellow><b>¡Que mal aliento!
+        description: <white>Guarda el aliento de un dragón en una botella
+        background:
+            path: textures/gui/demo_background.png
+            size: 256

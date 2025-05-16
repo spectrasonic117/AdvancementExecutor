@@ -1,0 +1,95 @@
+title: <red><b>Dificil
+icon:
+    path: textures/item/ender_eye.png
+    size: 40
+categories:
+    "cure_zombie_villager":
+        title: <red><b>Zombiólogo
+        description: <white>Cura a un aldeano zombi
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "shiny_gear":
+        title: <red><b>Cubreme de diamantes
+        description: <white>Crea una armadura de diamantes
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "remove_wolf_armor":
+        title: <red><b>¡A la moda!
+        description: <white>Quitale a un lobo su armadura usando tijeras
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "repair_wolf_armor":
+        title: <red><b>¡A la moda!
+        description: <white>Repara la armadura de un lobo con escama de armadillo
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "obtain_netherite_hoe":
+        title: <red><b>Dedicación seria
+        description: <white>Mejora una azada de diamante con un lingote de netherita
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "froglights":
+        title: <red><b>¡Combinando nuestros poderes!
+        description: <white>Consige todas las Ranaluces en tu inventario
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "allay_deliver_item_to_player":
+        title: <red><b>Yo soy tu amigo fiel
+        description: <white>Haz que un Allay te entregue un item
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "feed_snifflet":
+        title: <red><b>Pequeños olfateos
+        description: <white>Alimenta una cria de Sniffer
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "allay_deliver_cake_to_note_block":
+        title: <red><b>Cumpleaños Feliz
+        description: <white>Haz que un Allay te entregue un pastel en un bloque musical
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "all_potions":
+        title: <red><b>Mezcla explosiva
+        description: <white>Obten todos los efectos de poción
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "ride_strider_in_overworld_lava":
+        title: <red><b>Como en casa
+        description: <white>Da un largo paseo sobre un lago de lava en la superficie
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "use_lodestone":
+        title: <red><b>Magnetita, llevame a casa
+        description: <white>Imanta una bruja a un bloque de magnetita
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "obtain_ancient_debris":
+        title: <red><b>Oculto en las profundidades
+        description: <white>Consigue escombros ancestrales
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "respawn_dragon":
+        title: <red><b>¿Es un dejàvu?
+        description: <white>Invoca al dragón del End
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "find_end_city":
+        title: <red><b>La ciudad al final del juego
+        description: <white>Encuentra una endcity
+        background:
+            path: textures/gui/demo_background.png
+            size: 256

@@ -1,0 +1,107 @@
+title: <green><b>Fácil
+icon:
+    path: textures/item/stone_pickaxe.png
+    size: 40
+categories:
+    "mine_stone":
+        title: <green><b>Edad de Piedra
+        description: <white>Mina un poco de piedra con tu pico </white>
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "upgrade_tools":
+        title: <green><b>Mejorando Herramientas
+        description: <white>Fabrica un pico mejor
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "smelt_iron":
+        title: <green><b>Edad de Hierro
+        description: <white>Funde Hierro para obtener un lingote
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "plant_seed":
+        title: <green><b>Crecen tan rapido
+        description: <white>Planta un semilla en tierra
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "fishy_business":
+        title: <green><b>Asunto Escamoso
+        description: <white>Atrapa un pez
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "tactical_fishing":
+        title: <green><b>Pesca Tactica
+        description: <white>Atrapa un pez, sin caña de pesca
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "tame_an_animal":
+        title: <green><b>Mejores Amigos para siempre
+        description: <white>Domestica un aminal
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "breed_an_animal":
+        title: <green><b>Tortolitos
+        description: <white>Haz que 2 animales se reproduzcan
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "sleep_in_bed":
+        title: <green><b>Dulces Sueños
+        description: <white>Duerme en una cama
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "ol_betsy":
+        title: <green><b>La vieja confiable
+        description: <white>Dispara unaballesta
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "trim_with_any_armor_pattern":
+        title: <green><b>Forjando una nuva imagen
+        description: <white>Decora una armadura enuna mesa de herreria
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "shoot_arrow":
+        title: <green><b>En el Punto de mira
+        description: <white>Dispara a algo con una flecha
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "kill_a_mob":
+        title: <green><b>Cazamonstruos
+        description: <white>Mata un Mob Hostil
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "obtain_blaze_rod":
+        title: <green><b>Jugando con fuego
+        description: <white>Obten una vara de Blaze
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "find_fortress":
+        title: <green><b>Una terrible Fortaleza
+        description: <white>Entra a una fortaleza del Nether
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "ride_strider":
+        title: <green><b>¡Un bote con patas!
+        description: <white>Monta un Strider con una caña con hongo distorsionado
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
+    "find_bastion":
+        title: <green><b>Que tiempos aquellos
+        description: <white>entra en una Bastión
+        background:
+            path: textures/gui/demo_background.png
+            size: 256
