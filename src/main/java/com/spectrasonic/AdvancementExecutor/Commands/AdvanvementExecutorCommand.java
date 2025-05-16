@@ -3,10 +3,7 @@ package com.spectrasonic.AdvancementExecutor.Commands;
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.*;
 import co.aikar.commands.bukkit.contexts.OnlinePlayer;
-import com.spectrasonic.AdvancementExecutor.Main;
 import com.spectrasonic.AdvancementExecutor.advancements.*;
-import lombok.RequiredArgsConstructor;
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import java.util.UUID;
 
@@ -18,13 +15,25 @@ public class AdvanvementExecutorCommand extends BaseCommand {
     @Subcommand("reset")
     @CommandCompletion("@players @difficulty")
     @CommandPermission("advancementexecutor.reset")
-    @Description("Reset a player's advancement counter for a specific difficulty")
+    @Description("Reset a player's advancement counter for a specific difficulty or all difficulties")
     public void onReset(
             @Name("player") OnlinePlayer target,
-            @Name("dificultad") @Values("facil|medio|intermedio|dificil|muydificil") String difficulty
+            @Name("dificultad") @Values("facil|medio|intermedio|dificil|muydificil|all") String difficulty
     ) {
         Player player = target.getPlayer();
         UUID playerId = player.getUniqueId();
+
+        if (difficulty.equalsIgnoreCase("all")) {
+            // Reset all difficulty categories
+                Facil_AdvancementActionRegistry.resetPlayerAdvancements(playerId);
+                Medio_AdvancementActionRegistry.resetPlayerAdvancements(playerId);
+                Intermedio_AdvancementActionRegistry.resetPlayerAdvancements(playerId);
+                Dificil_AdvancementActionRegistry.resetPlayerAdvancements(playerId);
+                MuyDificil_AdvancementActionRegistry.resetPlayerAdvancements(playerId);
+
+            getCurrentCommandIssuer().sendMessage(String.format("§aSe han reiniciado todos los contadores de logros de %s", player.getName()));
+            return;
+        }
 
         switch (difficulty.toLowerCase()) {
             case "facil":
@@ -106,7 +115,6 @@ public class AdvanvementExecutorCommand extends BaseCommand {
     ) {
         Player player = target.getPlayer();
         UUID playerId = player.getUniqueId();
-
         switch (difficulty.toLowerCase()) {
             case "facil":
                 Facil_AdvancementActionRegistry.subtractPoints(playerId, points);

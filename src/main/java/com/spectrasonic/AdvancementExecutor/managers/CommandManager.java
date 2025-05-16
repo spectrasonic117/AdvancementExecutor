@@ -21,7 +21,7 @@ public class CommandManager {
     }
     private void registerCompletions() {
         commandManager.getCommandCompletions().registerCompletion("difficulty", c -> 
-            java.util.Arrays.asList("facil", "medio", "intermedio", "dificil", "muydificil")
+            java.util.Arrays.asList("facil", "medio", "intermedio", "dificil", "muydificil", "all")
         );
     }
 }
