@@ -3,3 +3,14 @@ version: "${project.version}"
 main: com.spectrasonic.AdvancementExecutor.Main
 api-version: "1.21"
 authors: [Spectrasonic]
+
+commands:
+    advancementexecutor:
+        aliases: [ae]
+        permission: advancementexecutor.admin
+
+permissions:
+    advancementexecutor.admin:
+        default: op
+    advancementexecutor.*:
+        default: op

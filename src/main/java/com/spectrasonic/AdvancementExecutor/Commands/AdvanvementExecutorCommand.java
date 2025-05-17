@@ -14,7 +14,7 @@ public class AdvanvementExecutorCommand extends BaseCommand {
 
     @Subcommand("reset")
     @CommandCompletion("@players @difficulty")
-    @CommandPermission("advancementexecutor.reset")
+    @CommandPermission("advancementexecutor.admin")
     @Description("Reset a player's advancement counter for a specific difficulty or all difficulties")
     public void onReset(
             @Name("player") OnlinePlayer target,
@@ -65,7 +65,7 @@ public class AdvanvementExecutorCommand extends BaseCommand {
 
     @Subcommand("add")
     @CommandCompletion("@players @difficulty @integer")
-    @CommandPermission("advancementexecutor.add")
+    @CommandPermission("advancementexecutor.admin")
     @Description("Add points to a player's advancement counter for a specific difficulty")
     public void onAdd(
             @Name("player") OnlinePlayer target,
@@ -106,7 +106,7 @@ public class AdvanvementExecutorCommand extends BaseCommand {
 
     @Subcommand("subtract")
     @CommandCompletion("@players @difficulty @integer")
-    @CommandPermission("advancementexecutor.subtract")
+    @CommandPermission("advancementexecutor.admin")
     @Description("Subtract points from a player's advancement counter for a specific difficulty")
     public void onSubtract(
             @Name("player") OnlinePlayer target,

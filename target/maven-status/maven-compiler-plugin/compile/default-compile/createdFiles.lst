@@ -1,4 +1,5 @@
 com/spectrasonic/AdvancementExecutor/managers/CommandManager.class
+com/spectrasonic/AdvancementExecutor/listeners/PlayerJoinListener.class
 com/spectrasonic/AdvancementExecutor/advancements/Dificil_AdvancementActionRegistry.class
 com/spectrasonic/AdvancementExecutor/advancements/Facil_AdvancementActionRegistry.class
 com/spectrasonic/AdvancementExecutor/listeners/AdvancementListener.class

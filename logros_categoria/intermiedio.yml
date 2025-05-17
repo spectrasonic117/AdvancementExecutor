@@ -1,173 +1,173 @@
 title: <#F65C00><b>Intermedio
 icon:
-    path: textures/item/wild_armor_trim_smithing_template.png
-    size: 40
+  path: textures/item/wild_armor_trim_smithing_template.png
+  size: 40
 categories:
-    "enchant_item":
-        title: <#F65C00><b>Aprendiz de mago
-        description: <white>Encanta un item
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "form_obsidian":
-        title: <#F65C00><b>Mente fria
-        description: <white>Consigue obsidiana
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "enter_the_nether":
-        title: <#F65C00><b>Tenemos que ir mas profundo
-        description: <white>Entra al Nether
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "follow_ender_eye":
-        title: <#F65C00><b>Ojo espia
-        description: <white>Sigue el ojo de Ender
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "mine_diamond":
-        title: <#F65C00><b>¡DIAMANTES!
-        description: <white>Consigue un diamante
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "tadpole_in_a_bucket":
-        title: <#F65C00><b>Croac-croac
-        description: <white>Atrapa un renacuajo con una cubeta
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "plant_any_sniffer_seed":
-        title: <#F65C00><b>Sembrando el pasado
-        description: <white>Planta cualquer semilla de sniffer
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "safely_harvest_honey":
-        title: <#F65C00><b>Abelante, esta es tu casa
-        description: <white>Usa una fogata y una botella para obtener miel
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "obtain_sniffer_egg":
-        title: <#F65C00><b>Huele interesante
-        description: <white>Consigue un huevo de sniffer
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "silk_touch_nest":
-        title: <#F65C00><b>Abejémonos de aqui
-        description: <white>Mueve un panal con 3 abejas dentro
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "ride_a_boat_with_a_goat":
-        title: <#F65C00><b>¡Cabra a la vista!
-        description: <white>Sube a un bote con una cabra
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "kill_axolotl_target":
-        title: <#F65C00><b>¡El poder curativo de la amistad!
-        description: <white>Sube a un bote con una cabra
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "wax_on":
-        title: <#F65C00><b>Dar cera
-        description: <white>Encera un bloque
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "axolotl_in_a_bucket":
-        title: <#F65C00><b>El depredador mas lindo
-        description: <white>Atrapa un ajolote con una cubeta
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "two_birds_one_arrow":
-        title: <#F65C00><b>Dos parajos de un tiro
-        description: <white>Mata 2 phantom de una flecha con perforación
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "kill_mob_near_sculk_catalyst":
-        title: <#F65C00><b>Se propaga
-        description: <white>Mata un mob cerca de un catalizador de sculk
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "blowback":
-        title: <#F65C00><b>Contraresto
-        description: <white>Mata un breeze devolviendole su carga de viento
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "voluntary_exile":
-        title: <#F65C00><b>Exilio voluntario
-        description: <white>Mata al capitan Pillager
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "spyglass_at_ghast":
-        title: <#F65C00><b>¿Es un globo?
-        description: <white>Mira a un Ghast a través de un catalejo
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "craft_decorated_pot_using_only_sherds":
-        title: <#F65C00><b>Restauración meticulosa
-        description: <white>farica un jarrón con 4 fragancias de cerámica
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "summon_iron_golem":
-        title: <#F65C00><b>El guardaespaldas
-        description: <white>Construye un golem de hierro
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "bullseye":
-        title: <#F65C00><b>¡Ojo de Halcón!
-        description: <white>Dale al centro de una diana a 30 bloques de distancia
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "create_beacon":
-        title: <#F65C00><b>¡Hagase la luz!
-        description: <white>Fabrica, coloca y activa un faro
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "summon_wither":
-        title: <#F65C00><b>Dr. Whiterstein
-        description: <white>Invoca un wither
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "fast_travel":
-        title: <#F65C00><b>Burbuja Subespacial
-        description: <white>Usa el nether para recorrer 7Km en la superficie
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "return_to_sender":
-        title: <#F65C00><b>Devolver al remitente
-        description: <white>Mata a un ghast con su propia bola de fuego
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "kill_dragon":
-        title: <#F65C00><b>La libertad el end
-        description: <white>Mata al dragón del end
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
-    "dragon_egg":
-        title: <#F65C00><b>La nueva generacion
-        description: <white>Obten el huevo del dragón
-        background:
-            path: textures/gui/demo_background.png
-            size: 256
+  "enchant_item":
+    title: <#F65C00><b>Aprendiz de mago
+    description: <white>Encanta un item
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "form_obsidian":
+    title: <#F65C00><b>Mente fria
+    description: <white>Consigue obsidiana
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "enter_the_nether":
+    title: <#F65C00><b>Tenemos que ir mas profundo
+    description: <white>Entra al Nether
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "follow_ender_eye":
+    title: <#F65C00><b>Ojo espia
+    description: <white>Sigue el ojo de Ender
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "mine_diamond":
+    title: <#F65C00><b>¡DIAMANTES!
+    description: <white>Consigue un diamante
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "tadpole_in_a_bucket":
+    title: <#F65C00><b>Croac-croac
+    description: <white>Atrapa un renacuajo con una cubeta
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "plant_any_sniffer_seed":
+    title: <#F65C00><b>Sembrando el pasado
+    description: <white>Planta cualquer semilla de sniffer
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "safely_harvest_honey":
+    title: <#F65C00><b>Abelante, esta es tu casa
+    description: <white>Usa una fogata y una botella para obtener miel
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "obtain_sniffer_egg":
+    title: <#F65C00><b>Huele interesante
+    description: <white>Consigue un huevo de sniffer
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "silk_touch_nest":
+    title: <#F65C00><b>Abejémonos de aqui
+    description: <white>Mueve un panal con 3 abejas dentro
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "ride_a_boat_with_a_goat":
+    title: <#F65C00><b>¡Cabra a la vista!
+    description: <white>Sube a un bote con una cabra
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "kill_axolotl_target":
+    title: <#F65C00><b>¡El poder curativo de la amistad!
+    description: <white>Haz equipo con un ajolote y gana una pelea
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "wax_on":
+    title: <#F65C00><b>Dar cera
+    description: <white>Encera un bloque
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "axolotl_in_a_bucket":
+    title: <#F65C00><b>El depredador mas lindo
+    description: <white>Atrapa un ajolote con una cubeta
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "two_birds_one_arrow":
+    title: <#F65C00><b>Dos parajos de un tiro
+    description: <white>Mata 2 phantom de una flecha con perforación
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "kill_mob_near_sculk_catalyst":
+    title: <#F65C00><b>Se propaga
+    description: <white>Mata un mob cerca de un catalizador de sculk
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "blowback":
+    title: <#F65C00><b>Contraresto
+    description: <white>Mata un breeze devolviendole su carga de viento
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "voluntary_exile":
+    title: <#F65C00><b>Exilio voluntario
+    description: <white>Mata al capitan Pillager
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "spyglass_at_ghast":
+    title: <#F65C00><b>¿Es un globo?
+    description: <white>Mira a un Ghast a través de un catalejo
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "craft_decorated_pot_using_only_sherds":
+    title: <#F65C00><b>Restauración meticulosa
+    description: <white>farica un jarrón con 4 fragancias de cerámica
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "summon_iron_golem":
+    title: <#F65C00><b>El guardaespaldas
+    description: <white>Construye un golem de hierro
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "bullseye":
+    title: <#F65C00><b>¡Ojo de Halcón!
+    description: <white>Dale al centro de una diana a 30 bloques de distancia
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "create_beacon":
+    title: <#F65C00><b>¡Hagase la luz!
+    description: <white>Fabrica, coloca y activa un faro
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "summon_wither":
+    title: <#F65C00><b>Dr. Whiterstein
+    description: <white>Invoca un wither
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "fast_travel":
+    title: <#F65C00><b>Burbuja Subespacial
+    description: <white>Usa el nether para recorrer 7Km en la superficie
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "return_to_sender":
+    title: <#F65C00><b>Devolver al remitente
+    description: <white>Mata a un ghast con su propia bola de fuego
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "kill_dragon":
+    title: <#F65C00><b>La libertad el end
+    description: <white>Mata al dragón del end
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
+  "dragon_egg":
+    title: <#F65C00><b>La nueva generacion
+    description: <white>Obten el huevo del dragón
+    background:
+      path: textures/gui/demo_background.png
+      size: 256
